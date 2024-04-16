@@ -3,6 +3,16 @@ let minute = document.querySelector(".minutes");
 let second = document.querySelector(".seconds");
 let pm = document.querySelector(".pm");
 let dots = document.querySelectorAll(".semi-colon");
+let clockDiv = document.querySelector("#clock-div");
+clockDiv.style.position = `relative`;
+
+let date = document.createElement("p");
+date.innerText = `some text here`;
+date.style.color = `white`;
+date.style.position = `absolute`;
+date.style.top = `11rem`;
+date.style.left = `0`;
+clockDiv.append(date);
 
 const dotsBlinking = (second) => {
     if(second % 2 === 0){
