@@ -7,7 +7,7 @@ let clockDiv = document.querySelector("#clock-div");
 clockDiv.style.boxShadow = `0 0 10rem .1rem black`;
 
 let newDiv = document.createElement("div");
-newDiv.classList.add("col-6" , "mx-auto")
+newDiv.classList.add("col-6");
 
 let date = document.createElement("span");
 let month = document.createElement("span");
@@ -36,11 +36,13 @@ newDiv.append(month);
 newDiv.append(dateDot2);
 newDiv.append(year);
 
-
-
-
 let accessNewDiv = document.querySelector("#clock-div").firstElementChild;
 accessNewDiv.append(newDiv);
+
+let setting = document.createElement("button");
+setting.innerText = `Date and Time`;
+
+clockDiv.append(setting);
 
 const dotsBlinking = (second) => {
     if(second % 2 === 0){
