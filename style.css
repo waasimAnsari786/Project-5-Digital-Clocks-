@@ -7,21 +7,6 @@ html{
     html{
         font-size: 68.75%;
     }
-
-    /* .digital-clock{
-        background-color: rgb(6, 29, 59);
-        border-radius: 1rem;
-    }
-
-    .digital-clock::before{
-        content: '';
-        position: absolute;
-        background: linear-gradient(45deg , blue , orange , green);
-        top: 100rem;
-        bottom: 52rem;
-        right: 26.5rem;
-        left: 26.5rem;
-    } */
 }
 
 @media (min-width:1000px) {
@@ -49,23 +34,6 @@ html{
 }
 /* my font size's media query end */
 
-/* my main div animation start */
-
-@keyframes glowing {
-    0%{
-        background-position: 0% 50%;
-    }
-
-    50%{
-        background-position: 100% 50%;
-    }
-
-    100%{
-        background-position: 0% 50%;
-    }
-}
-
-/* my main div animation end */
 
 
 
@@ -79,24 +47,6 @@ html body{
 .digital-clock{
     background-color: rgb(6, 29, 59);
     border-radius: 1rem;
-}
-
-.digital-clock::before{
-    content: '';
-    position: absolute;
-    background: linear-gradient(45deg , blue , orange , green);
-    background-size: 200% 200%;
-    top: 16rem;
-    bottom: 22rem;
-    right: 26.5rem;
-    left: 26.5rem;
-    z-index: -1;
-    filter: blur(3rem);
-    animation-name: glowing;
-    animation-duration: 5s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 #main-div{
@@ -135,6 +85,11 @@ html body{
     font-size: 3rem;
     text-transform: uppercase;
     color: rgb(243, 201, 15);
+}
+
+.date{
+    font-size: 3rem;
+    color: white;
 }
 /* my Digital Clock end */
 

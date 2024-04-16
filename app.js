@@ -4,15 +4,43 @@ let second = document.querySelector(".seconds");
 let pm = document.querySelector(".pm");
 let dots = document.querySelectorAll(".semi-colon");
 let clockDiv = document.querySelector("#clock-div");
-clockDiv.style.position = `relative`;
+clockDiv.style.boxShadow = `0 0 10rem .1rem black`;
 
-let date = document.createElement("p");
-date.innerText = `some text here`;
-date.style.color = `white`;
-date.style.position = `absolute`;
-date.style.top = `11rem`;
-date.style.left = `0`;
-clockDiv.append(date);
+let newDiv = document.createElement("div");
+newDiv.classList.add("col-6" , "mx-auto")
+
+let date = document.createElement("span");
+let month = document.createElement("span");
+let year = document.createElement("span");
+let dateDot = document.createElement("span");
+let dateDot2 = document.createElement("span");
+
+date.innerText = new Date().getDate();
+date.classList.add("date");
+
+month.innerText = new Date().getMonth() + 1;
+month.classList.add("date");
+
+year.innerText = new Date().getFullYear();
+year.classList.add("date");
+
+dateDot.innerText = `.`;
+dateDot.classList.add("date");
+
+dateDot2.innerText = `.`;
+dateDot2.classList.add("date");
+
+newDiv.append(date);
+newDiv.append(dateDot);
+newDiv.append(month);
+newDiv.append(dateDot2);
+newDiv.append(year);
+
+
+
+
+let accessNewDiv = document.querySelector("#clock-div").firstElementChild;
+accessNewDiv.append(newDiv);
 
 const dotsBlinking = (second) => {
     if(second % 2 === 0){
