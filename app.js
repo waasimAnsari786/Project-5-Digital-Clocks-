@@ -18,7 +18,7 @@ const dotsBlinking = (second) => {
 };
 
 const clock = () => {
-    let h = new Date().getDate();
+    let h = new Date().getHours();
     let m = new Date().getMinutes();
     let s = new Date().getSeconds();
 
