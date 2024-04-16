@@ -26,6 +26,10 @@ const clock = () => {
         h -= 12;
     }
 
+    if(h < 12) {
+        pm.innerText = `am`;
+    };
+
     s =  s < 10 ? `0${s}` : s;
     m =  m < 10 ? `0${m}` : m;
     h =  h < 10 ? `0${h}` : h;
