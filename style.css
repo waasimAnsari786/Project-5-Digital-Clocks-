@@ -52,6 +52,7 @@ html body {
 
 #main-div {
     min-height: 90vh;
+    position: relative;
 }
 
 .hour {
@@ -137,6 +138,33 @@ html body {
     color: white;
     font-weight: bold;
     font-size: 3rem;
+}
+
+#menu-2{
+    position: absolute;
+    padding: 3.5rem;
+    background-color: rgba(0, 255, 255, 0.438);
+    border-radius: 1rem;
+}
+
+.class-of-input{
+    width: 6rem;
+    outline: none;
+    font-size: 3rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+#cencel-btn , #ok-btn{
+    background-color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    width: 6rem;
 }
 
 /* my Digital Clock end */

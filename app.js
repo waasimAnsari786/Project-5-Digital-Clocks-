@@ -8,7 +8,6 @@ clockDiv.style.boxShadow = `0 0 10rem .1rem black`;
 clockDiv.style.position = `relative`;
 
 let newDiv = document.createElement("div");
-newDiv.classList.add("col-6");
 
 let date = document.createElement("span");
 let month = document.createElement("span");
@@ -50,13 +49,32 @@ clockDiv.append(setting);
 let menu = document.querySelector("#menu");
 menu.classList.add("hide");
 
-let okBtn = document.createElement("button");
-okBtn.innerText = `ok`.toUpperCase();
-okBtn.classList.add("class-of-btns");
+// const setDates = (inputsId) => {
+//     // console.log(inputsId);
 
-let cancelBtn = document.createElement("button");
-cancelBtn.classList.add("class-of-btns");
-cancelBtn.innerText = `cancel`.toUpperCase();
+//     newDate = inputsId.id === `date-input-0` ? inputsId : newDate;
+//     newMonth = inputsId.id === `date-input-1` ? inputsId : newMonth;
+//     newYear = inputsId.id === `date-input-2` ? inputsId : newYear;
+
+//     // okBtn.addEventListener("click", () => {
+//     //     let currDate = new Date();
+//     //     let updateDate = updatedDate.value;
+//     //     currDate.setDate(updateDate);
+//     //     date.innerText = currDate.getDate();
+
+//     //     let currMonth = new Date();
+//     //     let updateMonth = updatedMonth.value;
+//     //     currMonth.setMonth(updateMonth);
+//     //     month.innerText = currDate.getMonth();
+
+//     //     let currYear = new Date();
+//     //     let updateYear = updatedYear.value;
+//     //     currYear.setFullYear(updateYear);
+//     //     year.innerText = currYear.getFullYear();
+
+//     //     console.log(`button was clicked`);
+//     // });
+// };
 
 const dotsBlinking = (second) => {
     if (second % 2 === 0) {
@@ -99,20 +117,59 @@ setting.addEventListener("click", () => {
     setting.classList.add("hide");
 });
 
+// let menu2 = document.querySelector("#menu-2");
+
 dateBtn.addEventListener("click", () => {
     menu.classList.add("hide");
 
-    let btnDiv = document.createElement("div");
-    btnDiv.classList.add("d-flex", "justify-content-around", "align-items-center", "w-100", "mt-5")
-    clockDiv.append(btnDiv);
+    // let btnDiv = document.createElement("div");
+    // btnDiv.classList.add("d-flex", "justify-content-around", "align-items-center", "w-100", "mt-5")
+    // clockDiv.append(btnDiv);
 
-    btnDiv.append(okBtn);
-    btnDiv.append(cancelBtn);
+    // newDiv.classList.add("col-9");
 
-    newDiv.classList.add("col-9");
+    // let okBtn = document.createElement("button");
+    // okBtn.innerText = `ok`.toUpperCase();
+    // okBtn.classList.add("class-of-btns");
 
-    let newDate = date.innerHTML = `<input type="number" class="date-input" value="00">`;
-    let newMonth = month.innerHTML = `<input type="number" class="date-input" value="00">`;
-    let newYear = year.innerHTML = `<input type="number" class="date-input" value="00">`;
-    setDates(newDate, newMonth, newYear);
+    // let cancelBtn = document.createElement("button");
+    // cancelBtn.classList.add("class-of-btns");
+    // cancelBtn.innerText = `cancel`.toUpperCase();
+
+    // btnDiv.append(okBtn);
+    // btnDiv.append(cancelBtn);
+
+    // let childrenOfNewDiv = newDiv.children;
+    // console.log(childrenOfNewDiv);
+
+    // for (let index = 0; index < 5; index++) {
+    //     if (index % 2 === 0 || index === 0) {
+    //         newDiv.removeChild(newDiv.children[index]);
+    //     }
+    // }
+
+    // while (newDiv.firstChild) {
+    //     newDiv.removeChild(newDiv.firstChild);
+    // }
+
+    // let newDate;
+    // let newMonth;
+    // let newYear;
+
+    // for (let index = 0; index < 3; index++) {
+    //     let dateInput = document.createElement("input");
+    //     dateInput.value = 0;
+    //     dateInput.setAttribute("type", "number");
+    //     dateInput.setAttribute("id", `date-input-${index}`);
+    //     dateInput.classList.add("date-input");
+    //     newDiv.append(dateInput);
+        
+    //     newDate = dateInput.id === `date-input-0` ? dateInput : null;
+    //     newMonth = dateInput.id === `date-input-1` ? dateInput : null;
+    //     newYear = dateInput.id === `date-input-2` ? dateInput : null;
+        
+    //     console.log(newDate);
+    //     console.log(newMonth);
+    //     console.log(newYear);
+    // };
 });
