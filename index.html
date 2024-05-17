@@ -53,48 +53,10 @@
 
     <div class="container">
         <div class="row d-flex justify-content-center align-items-center" id="main-div">
-            <div class="col-5 digital-clock d-flex justify-content-center align-items-center flex-column p-5"
+            <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8 col-sm-9 col-10 digital-clock d-flex justify-content-center align-items-center flex-column"
                 id="clock-div">
-                <div>
-                    <div class="d-flex justify-content-center align-items-baseline">
-                        <p class="hour">00</p>
-                        <p class="semi-colon">:</p>
-                        <span class="minutes">00</span>
-                        <p class="semi-colon">:</p>
-                        <span class="seconds">00</span>
-                        <span class="pm">pm</span>
-
-                        <div id="menu" class="bg-light">
-                            <button class="menu-options" id="date-btn">date settings</button>
-                            <button class="menu-options" id="time-btn">time settings</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="menu-2" class="col-5 hide">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <input type="number" id="date-input" value="00" class="class-of-input">
-                    <span class="class-of-input">:</span>
-
-                    <input type="number" id="date-input-2" value="00" class="class-of-input">
-                    <span class="class-of-input">:</span>
-
-                    <input type="number" id="date-input-3" value="00" class="class-of-input">
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <input type="number" id="date-input" value="00" class="class-of-input">
-                    <span class="class-of-input">.</span>
-                    <input type="number" id="date-input-2" value="00" class="class-of-input">
-                    <span class="class-of-input">.</span>
-                    <input type="number" id="date-input-3" value="00" class="class-of-input">
-                </div>
-
-                <div class="col-12 d-flex justify-content-around align-items-center mt-5">
-                    <button id="ok-btn">ok</button>
-                    <button id="cencel-btn">cancel</button>
-                </div>
+                <p class="clock-time"></p>
+                <p class="clock-time" id="clock-date"></p>
             </div>
         </div>
     </div>

@@ -31,6 +31,7 @@ html {
     html {
         font-size: 50%;
     }
+
 }
 
 /* my font size's media query end */
@@ -46,8 +47,9 @@ html body {
 }
 
 .digital-clock {
-    background-color: rgb(6, 29, 59);
+    box-shadow: .4rem .7rem 2rem black;
     border-radius: 1rem;
+    padding: 5rem;
 }
 
 #main-div {
@@ -55,119 +57,13 @@ html body {
     position: relative;
 }
 
-.hour {
-    font-size: 7rem;
-    color: white;
-}
-
-.semi-colon {
-    font-size: 5rem;
-    color: white;
-    margin: 0 .2rem;
-}
-
-.minutes {
+.clock-time {
     font-size: 6rem;
-    margin-top: -1rem;
+    /* margin-top: 1rem; */
     color: white;
 }
 
-.seconds {
-    font-size: 5rem;
-    color: white;
-}
-
-.pm {
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: white;
-}
-
-.date {
-    font-size: 3rem;
-    color: white;
-}
-
-.position {
-    position: absolute;
-    right: 3.5rem;
-    bottom: 3.5rem;
-    border: none;
-    background-color: white;
-    border-radius: .5rem;
-    font-size: 1.3rem;
-    padding: .5rem;
-}
-
-.class-of-btns{
-    border: none;
-    background-color: white;
-    border-radius: .5rem;
-    font-size: 1.3rem;
-    padding: .5rem;
-    width: 6rem;
-}
-
-#menu{
-    padding: 1rem 1rem 1.7rem 1rem;
-    width: 11rem;
-    position: absolute;
-    top: 15rem;
-    border-radius: .5rem;
-    box-shadow:  .4rem .4rem 1rem gray;
-    right: 0;
-}
-
-.hide{
-    display: none;
-}
-
-.menu-options{
-    font-size: 1.3rem;
-    text-transform:capitalize;
-    border: none;
-    margin-top: 1rem;
-    background-color: transparent;
-}
-
-.date-input{
-    width: 6rem;
-    outline: none;
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-#menu-2{
-    position: absolute;
-    padding: 3.5rem;
-    background-color: rgba(0, 255, 255, 0.438);
-    border-radius: 1rem;
-}
-
-.class-of-input{
-    width: 6rem;
-    outline: none;
-    font-size: 3rem;
-    color: white;
-    background-color: transparent;
-    border: none;
-    font-weight: bold;
-}
-
-#cencel-btn , #ok-btn{
-    background-color: white;
-    border: none;
-    border-radius: .5rem;
-    padding: .5rem;
-    text-transform: capitalize;
-    font-size: 1.3rem;
-    width: 6rem;
-}
-
-/* my Digital Clock end */
+/* my Digital  end */
 
 
 
